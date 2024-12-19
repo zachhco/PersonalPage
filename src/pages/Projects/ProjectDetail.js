@@ -45,7 +45,10 @@ const ProjectDetail = () => {
   return (
     <DetailContainer>
       <h1>{project.title}</h1>
-      <ProjectImage src={`/images/${project.image}`} alt={project.title} />
+      <ProjectImage 
+        src={`${process.env.PUBLIC_URL}/images/${project.image}`} 
+        alt={project.title} 
+      />
       <p>{project.details}</p>
       <div style={{ marginBottom: '20px' }}>
         {project.technologies.map(tech => (

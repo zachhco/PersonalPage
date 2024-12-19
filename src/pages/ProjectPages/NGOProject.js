@@ -50,7 +50,10 @@ const NGOProject = () => {
       <Title>Siphekela Isizwe Empowerment and Feeding Scheme - Website</Title>
       
       <Section>
-        <ProjectImage src="/images/snap.png" alt="NGO Website" />
+        <ProjectImage 
+          src={process.env.PUBLIC_URL + '/images/snap.png'} 
+          alt="NGO Website" 
+        />
       </Section>
 
       <Section>

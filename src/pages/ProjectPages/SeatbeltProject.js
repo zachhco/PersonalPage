@@ -51,7 +51,10 @@ const SeatbeltProject = () => {
       <Title>Harnessing Predictive Models to Enhance Road Safety</Title>
       
       <Section>
-        <ProjectImage src="/images/belting3.png" alt="Seatbelt Project" />
+        <ProjectImage 
+          src={process.env.PUBLIC_URL + '/images/Belting3.png'} 
+          alt="Seatbelt Project" 
+        />
       </Section>
 
       <Section>

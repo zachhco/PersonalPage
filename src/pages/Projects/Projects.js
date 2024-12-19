@@ -60,7 +60,10 @@ const Projects = () => {
             transition={{ duration: 0.5 }}
           >
             <ProjectLink to={getProjectPath(project.id)}>
-              <ProjectImage src={`/images/${project.image}`} alt={project.title} />
+              <ProjectImage 
+                src={`${process.env.PUBLIC_URL}/images/${project.image}`} 
+                alt={project.title} 
+              />
               <h2>{project.title}</h2>
               <p>{project.description}</p>
             </ProjectLink>
