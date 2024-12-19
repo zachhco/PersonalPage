@@ -11,9 +11,12 @@ import SeatbeltProject from './pages/ProjectPages/SeatbeltProject';
 import NGOProject from './pages/ProjectPages/NGOProject';
 
 function App() {
+  // Only use basename in production (GitHub Pages)
+  const basename = process.env.NODE_ENV === 'production' ? '/PersonalPage' : '';
+
   return (
     <ProjectsProvider>
-      <Router basename="/PersonalPage">
+      <Router basename={basename}>
         <Layout>
           <Navbar />
           <Routes>
