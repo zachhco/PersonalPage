@@ -61,7 +61,7 @@ const Projects = () => {
           >
             <ProjectLink to={getProjectPath(project.id)}>
               <ProjectImage 
-                src={`${process.env.PUBLIC_URL}/images/${project.image}`} 
+                src={project.image} 
                 alt={project.title} 
               />
               <h2>{project.title}</h2>

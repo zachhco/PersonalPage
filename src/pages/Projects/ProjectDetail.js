@@ -46,7 +46,7 @@ const ProjectDetail = () => {
     <DetailContainer>
       <h1>{project.title}</h1>
       <ProjectImage 
-        src={`${process.env.PUBLIC_URL}/images/${project.image}`} 
+        src={project.image} 
         alt={project.title} 
       />
       <p>{project.details}</p>
