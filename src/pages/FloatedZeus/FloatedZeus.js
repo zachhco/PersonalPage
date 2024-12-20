@@ -28,12 +28,9 @@ const FloatedZeus = () => {
 
   return (
     <div className="floatedzeus-container">
-      <h2>This is not FloatedZeus</h2>
-      hi
-
+      <h2>FloatedZeus</h2>
       <div className="visual-players">
-
-      <div className="visual-player">
+        <div className="visual-player">
           <iframe 
             width="100%" 
             height="300" 
@@ -44,11 +41,12 @@ const FloatedZeus = () => {
             title="Minimal Deep Mix - Visual Player"
           />
           <div className="player-info">
-            <a href="https://soundcloud.com/zach-cohen-37098677" title="FloatedZeus" target="_blank" rel="noopener noreferrer" style={{ color: '#cccccc', textDecoration: 'none' }}>FloatedZeus</a>
+            <a href="https://soundcloud.com/zach-cohen-37098677" title="FloatedZeus" target="_blank" rel="noopener noreferrer">FloatedZeus</a>
             {' · '}
-            <a href="https://soundcloud.com/zach-cohen-37098677/minimal-deep-mix-floatedzeus" title="Minimal Deep Mix - FloatedZeus" target="_blank" rel="noopener noreferrer" style={{ color: '#cccccc', textDecoration: 'none' }}>Minimal Deep Mix - FloatedZeus</a>
+            <a href="https://soundcloud.com/zach-cohen-37098677/minimal-deep-mix-floatedzeus" title="Minimal Deep Mix - FloatedZeus" target="_blank" rel="noopener noreferrer">Minimal Deep Mix - FloatedZeus</a>
           </div>
         </div>
+
         <div className="visual-player">
           <iframe 
             width="100%" 
@@ -60,9 +58,9 @@ const FloatedZeus = () => {
             title="House Party Mix - Visual Player"
           />
           <div className="player-info">
-            <a href="https://soundcloud.com/zach-cohen-37098677" title="FloatedZeus" target="_blank" rel="noopener noreferrer" style={{ color: '#cccccc', textDecoration: 'none' }}>FloatedZeus</a>
+            <a href="https://soundcloud.com/zach-cohen-37098677" title="FloatedZeus" target="_blank" rel="noopener noreferrer">FloatedZeus</a>
             {' · '}
-            <a href="https://soundcloud.com/zach-cohen-37098677/floated-zeus-house-party-mix-the-matrix" title="House Party Mix - FloatedZeus - The Matrix" target="_blank" rel="noopener noreferrer" style={{ color: '#cccccc', textDecoration: 'none' }}>House Party Mix - FloatedZeus - The Matrix</a>
+            <a href="https://soundcloud.com/zach-cohen-37098677/floated-zeus-house-party-mix-the-matrix" title="House Party Mix - FloatedZeus - The Matrix" target="_blank" rel="noopener noreferrer">House Party Mix - FloatedZeus - The Matrix</a>
           </div>
         </div>
 
@@ -77,9 +75,9 @@ const FloatedZeus = () => {
             title="Organic House Mix - Visual Player"
           />
           <div className="player-info">
-            <a href="https://soundcloud.com/zach-cohen-37098677" title="FloatedZeus" target="_blank" rel="noopener noreferrer" style={{ color: '#cccccc', textDecoration: 'none' }}>FloatedZeus</a>
+            <a href="https://soundcloud.com/zach-cohen-37098677" title="FloatedZeus" target="_blank" rel="noopener noreferrer">FloatedZeus</a>
             {' · '}
-            <a href="https://soundcloud.com/zach-cohen-37098677/organic-house-mix" title="Organic House Mix - FloatedZeus" target="_blank" rel="noopener noreferrer" style={{ color: '#cccccc', textDecoration: 'none' }}>Organic House Mix - FloatedZeus</a>
+            <a href="https://soundcloud.com/zach-cohen-37098677/organic-house-mix" title="Organic House Mix - FloatedZeus" target="_blank" rel="noopener noreferrer">Organic House Mix - FloatedZeus</a>
           </div>
         </div>
 
@@ -94,9 +92,9 @@ const FloatedZeus = () => {
             title="Jungle Mix - Visual Player"
           />
           <div className="player-info">
-            <a href="https://soundcloud.com/zach-cohen-37098677" title="FloatedZeus" target="_blank" rel="noopener noreferrer" style={{ color: '#cccccc', textDecoration: 'none' }}>FloatedZeus</a>
+            <a href="https://soundcloud.com/zach-cohen-37098677" title="FloatedZeus" target="_blank" rel="noopener noreferrer">FloatedZeus</a>
             {' · '}
-            <a href="https://soundcloud.com/zach-cohen-37098677/junglemix-1" title="JungleMix - FloatedZeus" target="_blank" rel="noopener noreferrer" style={{ color: '#cccccc', textDecoration: 'none' }}>JungleMix - FloatedZeus</a>
+            <a href="https://soundcloud.com/zach-cohen-37098677/jungle-mix" title="Jungle Mix - FloatedZeus" target="_blank" rel="noopener noreferrer">Jungle Mix - FloatedZeus</a>
           </div>
         </div>
       </div>

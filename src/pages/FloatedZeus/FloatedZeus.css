@@ -80,10 +80,85 @@
 .floatedzeus-container {
   padding: 20px;
   background-color: #000000;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .floatedzeus-container {
+    padding: 15px;
+  }
 }
 
 .floatedzeus-container h2 {
-  color: #ffffff;
+  color: #00ff00;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #00ff00;
+  animation: textGlowPulse 3s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .floatedzeus-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.visual-players {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .visual-players {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+.visual-player {
+  background: #121212;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.visual-player:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.3);
+}
+
+.visual-player iframe {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.player-info {
+  padding: 1rem;
+  background: #1a1a1a;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .player-info {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+.player-info a {
+  transition: color 0.3s ease;
+}
+
+.player-info a:hover {
+  color: #00ff00 !important;
+  text-shadow: 0 0 10px #00ff00;
 }
 
 .floatedzeus-container table {
@@ -147,28 +222,4 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.visual-players {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.visual-player {
-  width: 100%;
-}
-
-.player-info {
-  font-size: 10px;
-  color: #cccccc;
-  line-break: anywhere;
-  word-break: normal;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
-  font-weight: 100;
-  margin-top: 5px;
 }
