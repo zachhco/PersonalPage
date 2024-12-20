@@ -2,7 +2,7 @@
   "name": "personal-website",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://zachhco.github.io/PersonalPage/",
+  "homepage": "https://cohenzach.com",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
