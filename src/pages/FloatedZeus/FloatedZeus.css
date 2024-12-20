@@ -4,21 +4,64 @@
   min-height: 100vh;
 }
 
+@keyframes glowPulse {
+  0% {
+    box-shadow: 
+      0 0 20px #00ff00,
+      0 0 30px #00ff00,
+      0 0 40px #00ff00,
+      0 0 50px #00ff00;
+  }
+  50% {
+    box-shadow: 
+      0 0 25px #00ff00,
+      0 0 35px #00ff00,
+      0 0 45px #00ff00,
+      0 0 55px #00ff00;
+  }
+  100% {
+    box-shadow: 
+      0 0 20px #00ff00,
+      0 0 30px #00ff00,
+      0 0 40px #00ff00,
+      0 0 50px #00ff00;
+  }
+}
+
+@keyframes textGlowPulse {
+  0%, 100% {
+    text-shadow: 0 0 10px #00ff00;
+  }
+  50% {
+    text-shadow: 0 0 15px #00ff00;
+  }
+}
+
+.dark-theme-wrapper div[class^="Layout"] {
+  background-color: #000000 !important;
+  box-shadow: none !important;
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
 .dark-theme-wrapper .header {
   background-color: #000000;
   box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
 .dark-theme-wrapper .header-name {
-  color: #ffffff;
+  color: #00ff00;
+  animation: textGlowPulse 3s ease-in-out infinite;
 }
 
 .dark-theme-wrapper .nav-links a {
-  color: #00b4ff;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+  animation: textGlowPulse 3s ease-in-out infinite;
 }
 
 .dark-theme-wrapper .nav-links a:hover {
-  color: #66d9ff;
+  color: #66ff66;
+  text-shadow: 0 0 15px #00ff00;
 }
 
 .dark-theme-wrapper footer {
@@ -32,12 +75,6 @@
 
 .dark-theme-wrapper .container {
   background-color: #000000;
-}
-
-/* Override Layout component styles */
-.dark-theme-wrapper div[class^="Layout"] {
-  background-color: #000000 !important;
-  box-shadow: none !important;
 }
 
 .floatedzeus-container {
@@ -110,4 +147,28 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.visual-players {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.visual-player {
+  width: 100%;
+}
+
+.player-info {
+  font-size: 10px;
+  color: #cccccc;
+  line-break: anywhere;
+  word-break: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+  font-weight: 100;
+  margin-top: 5px;
 }

@@ -8,9 +8,15 @@ const Container = styled(motion.div)`
   padding: 20px;
   min-height: 100vh;
   background: ${props => props.isDarkTheme ? '#000000' : 'white'};
-  box-shadow: ${props => props.isDarkTheme ? 'none' : `
+  box-shadow: ${props => props.isDarkTheme ? `
+    0 0 20px #00ff00,
+    0 0 30px #00ff00,
+    0 0 40px #00ff00,
+    0 0 50px #00ff00` : `
     -15px 0 20px -10px rgba(76, 175, 80, 0.2),
     15px 0 20px -10px rgba(76, 175, 80, 0.2)`};
+  position: relative;
+  z-index: 1;
 `;
 
 const Layout = ({ children }) => {
