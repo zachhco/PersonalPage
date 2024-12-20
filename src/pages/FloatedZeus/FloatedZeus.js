@@ -1,9 +1,19 @@
-import React from 'react';
-import './About.css';
+import React, { useEffect } from 'react';
+import './FloatedZeus.css';
 
-const About = () => {
+const FloatedZeus = () => {
+  useEffect(() => {
+    // Add dark theme class when component mounts
+    document.body.classList.add('dark-theme-wrapper');
+    
+    // Remove dark theme class when component unmounts
+    return () => {
+      document.body.classList.remove('dark-theme-wrapper');
+    };
+  }, []);
+
   return (
-    <div className="about-container">
+    <div className="floatedzeus-container">
       <h2>Some sites and tools I find useful</h2>
       
       <table>
@@ -98,4 +108,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default FloatedZeus;

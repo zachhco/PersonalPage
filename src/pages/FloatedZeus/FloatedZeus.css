@@ -1,0 +1,113 @@
+.dark-theme-wrapper {
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.dark-theme-wrapper .header {
+  background-color: #000000;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme-wrapper .header-name {
+  color: #ffffff;
+}
+
+.dark-theme-wrapper .nav-links a {
+  color: #00b4ff;
+}
+
+.dark-theme-wrapper .nav-links a:hover {
+  color: #66d9ff;
+}
+
+.dark-theme-wrapper footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.dark-theme-wrapper #main {
+  background-color: #000000;
+}
+
+.dark-theme-wrapper .container {
+  background-color: #000000;
+}
+
+/* Override Layout component styles */
+.dark-theme-wrapper div[class^="Layout"] {
+  background-color: #000000 !important;
+  box-shadow: none !important;
+}
+
+.floatedzeus-container {
+  padding: 20px;
+  background-color: #000000;
+}
+
+.floatedzeus-container h2 {
+  color: #ffffff;
+}
+
+.floatedzeus-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #121212;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+.floatedzeus-container thead {
+  background-color: #1e1e1e;
+}
+
+.floatedzeus-container th,
+.floatedzeus-container td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+  color: #ffffff;
+}
+
+.floatedzeus-container th {
+  font-weight: bold;
+}
+
+.floatedzeus-container .icon-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.floatedzeus-container .icon-cell img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.floatedzeus-container a {
+  color: #00b4ff;
+  text-decoration: none;
+}
+
+.floatedzeus-container a:hover {
+  text-decoration: underline;
+  color: #66d9ff;
+}
+
+.floatedzeus-container .soundcloud-section {
+  margin-top: 30px;
+}
+
+.floatedzeus-container .soundcloud-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.floatedzeus-container .soundcloud-tracks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

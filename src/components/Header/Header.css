@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Londrina+Outline&family=Orbitron:wght@400;500;600;700;800;900&family=Press+Start+2P&display=swap');
+
+.header {
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.header-name {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 1.6rem;
+}
+
+.header-portfolio {
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-family: 'Bungee Shade', cursive;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+  color: #666;
+}
