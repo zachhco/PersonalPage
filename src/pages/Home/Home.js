@@ -5,30 +5,50 @@ import PagePreview from '../../components/PagePreview/PagePreview';
 
 const HomeContainer = styled(motion.div)`
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
+  
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
 `;
 
 const Title = styled.h1`
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  padding: 0 1rem;
+  
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
 `;
 
 const Subtitle = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: #666;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
 `;
 
 const PreviewGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
   @media (min-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 `;
 

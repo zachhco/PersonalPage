@@ -24,6 +24,7 @@ th {
   display: flex;
   align-items: center;
   gap: 10px;
+  white-space: nowrap;
 }
 
 .icon-cell img {
@@ -60,6 +61,13 @@ a:hover {
 
 .about-container {
   padding: 20px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.about-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
 }
 
 .about-container table {
@@ -121,4 +129,34 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 15px;
+  }
+
+  .about-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  /* Make the table scrollable horizontally on mobile */
+  .about-container {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    min-width: 600px; /* Ensure table doesn't get too squished */
+  }
+
+  /* Adjust the Note column to take less space on mobile */
+  td:nth-child(2) {
+    max-width: 200px;
+  }
 }

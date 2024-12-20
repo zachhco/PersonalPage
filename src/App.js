@@ -19,10 +19,10 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/seatbelt" element={<SeatbeltProject />} />
             <Route path="/projects/ngo" element={<NGOProject />} />
-            <Route path="/about" element={<About />} />
             <Route path="/floatedzeus" element={<FloatedZeus />} />
           </Routes>
         </Layout>

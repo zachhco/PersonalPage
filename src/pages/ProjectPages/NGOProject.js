@@ -4,41 +4,77 @@ import styled from '@emotion/styled';
 const PageContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
+  
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
 `;
 
 const Title = styled.h1`
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
 `;
 
 const ProjectImage = styled.img`
   width: 100%;
-  max-width: 800px;
   height: auto;
   border-radius: 8px;
-  margin: 20px 0;
+  margin-bottom: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `;
 
-const TechTag = styled.span`
-  display: inline-block;
-  background: #e8f5e9;
-  color: #2e7d32;
-  padding: 6px 12px;
-  border-radius: 16px;
-  margin: 4px;
-  font-size: 0.9em;
+const Section = styled.section`
+  margin-bottom: 2rem;
+  
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    
+    @media (min-width: 768px) {
+      font-size: 1.8rem;
+    }
+  }
+  
+  p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    
+    @media (min-width: 768px) {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+  }
 `;
 
-const Section = styled.section`
-  margin: 2rem 0;
+const TechContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+`;
+
+const TechTag = styled.span`
+  background-color: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  
+  @media (min-width: 768px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const Link = styled.a`
-  color: #2e7d32;
+  color: #0066cc;
   text-decoration: none;
+  
   &:hover {
     text-decoration: underline;
   }
@@ -87,11 +123,9 @@ const NGOProject = () => {
 
       <Section>
         <h2>Technologies Used</h2>
-        <div>
+        <TechContainer>
           <TechTag>Web Development</TechTag>
-          <TechTag>NGO</TechTag>
-          <TechTag>South Africa</TechTag>
-        </div>
+        </TechContainer>
       </Section>
     </PageContainer>
   );

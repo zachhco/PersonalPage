@@ -6,8 +6,13 @@ import { ProjectsContext } from '../../context/ProjectsContext';
 
 const ProjectGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 1.5rem;
+  padding: 1rem;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 const ProjectCard = styled(motion.div)`
@@ -32,6 +37,36 @@ const ProjectImage = styled.img`
   height: auto;
   border-radius: 10px;
   margin-bottom: 1rem;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+`;
+
+const Title = styled.h1`
+  font-size: 2rem;
+  margin: 1rem;
+  
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+  }
+`;
+
+const ProjectTitle = styled.h2`
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+`;
+
+const ProjectDescription = styled.p`
+  font-size: 0.9rem;
+  line-height: 1.4;
+  
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 `;
 
 const Projects = () => {
@@ -50,7 +85,7 @@ const Projects = () => {
 
   return (
     <div>
-      <h1>My Projects</h1>
+      <Title>My Projects</Title>
       <ProjectGrid>
         {projects.map(project => (
           <ProjectCard
@@ -64,8 +99,8 @@ const Projects = () => {
                 src={project.image} 
                 alt={project.title} 
               />
-              <h2>{project.title}</h2>
-              <p>{project.description}</p>
+              <ProjectTitle>{project.title}</ProjectTitle>
+              <ProjectDescription>{project.description}</ProjectDescription>
             </ProjectLink>
           </ProjectCard>
         ))}

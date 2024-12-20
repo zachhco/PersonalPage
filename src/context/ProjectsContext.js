@@ -20,20 +20,6 @@ export const ProjectsProvider = ({ children }) => {
       details: `During my time doing research in South Africa, I was fortunate enough to develop relationships with several amazing NGOs. One of them was Siphekela Isizwe Empowerment and Feeding Scheme. Run by Lungi, they provide nutrition, empowerment, and relief to seniors and children in western Cape townships. To give Lungi and Siphekela Isizwe Empowerment and Feeding Scheme more visibility, I created a website that provides an overview of their work and a means by which people can assist. siphekelaisizwe.com`,
       technologies: ['Web Development', 'NGO', 'South Africa'],
       image: process.env.PUBLIC_URL + '/images/snap.png'
-    },
-    {
-      id: 3,
-      title: 'Placeholder Project 1',
-      description: 'This is a placeholder project description.',
-      technologies: ['Placeholder', 'Example'],
-      image: process.env.PUBLIC_URL + '/images/work.png'
-    },
-    {
-      id: 4,
-      title: 'Placeholder Project 2',
-      description: 'This is another placeholder project description.',
-      technologies: ['Placeholder', 'Example'],
-      image: process.env.PUBLIC_URL + '/images/work.png'
     }
   ]);
 

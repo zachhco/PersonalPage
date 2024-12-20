@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
   const location = useLocation();
   const isFloatedZeus = location.pathname === '/floatedzeus';
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <header className="header">
@@ -17,11 +22,14 @@ const Header = () => {
         <h1 className="header-title">
           <span className="header-name">{isFloatedZeus ? 'FloatedZeus' : 'Zach Cohen'}</span>
         </h1>
-        <nav className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/about">About</Link>
-          <Link to="/floatedzeus">FloatedZeus</Link>
+        <button className="menu-button" onClick={toggleMenu}>
+          {isMenuOpen ? '✕' : '☰'}
+        </button>
+        <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+          <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
+          <Link to="/projects" onClick={() => setIsMenuOpen(false)}>Projects</Link>
+          <Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link>
+          <Link to="/floatedzeus" onClick={() => setIsMenuOpen(false)}>FloatedZeus</Link>
         </nav>
       </div>
     </header>

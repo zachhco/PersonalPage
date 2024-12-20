@@ -17,6 +17,12 @@ const PreviewCard = styled(motion.div)`
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+  @media (max-width: 768px) {
+    min-height: 350px;
+    padding: 15px;
+    margin: 10px;
+  }
+
   &:hover {
     transform: translateY(-5px);
     box-shadow: ${props => props.darkTheme 
@@ -38,6 +44,11 @@ const PreviewImage = styled.div`
   transition: transform 0.3s ease;
   overflow: hidden;
 
+  @media (max-width: 768px) {
+    height: 180px;
+    width: ${props => props.isCircular ? '180px' : '100%'};
+  }
+
   &:hover {
     transform: scale(1.05);
   }
@@ -48,6 +59,10 @@ const PreviewTitle = styled.h3`
   margin-bottom: 10px;
   color: ${props => props.darkTheme ? '#39FF14' : 'inherit'};
   text-shadow: ${props => props.darkTheme ? '0 0 10px #39FF14' : 'none'};
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+  }
 `;
 
 const PreviewDescription = styled.p`
@@ -55,6 +70,10 @@ const PreviewDescription = styled.p`
   color: ${props => props.darkTheme ? '#39FF14' : '#666666'};
   text-shadow: ${props => props.darkTheme ? '0 0 8px #39FF14' : 'none'};
   flex-grow: 1;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const PagePreview = ({ title, description, image, path, darkTheme }) => {
