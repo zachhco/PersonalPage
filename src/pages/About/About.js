@@ -52,48 +52,6 @@ const About = () => {
           </tr>
         </tbody>
       </table>
-
-      <table>
-        <tbody>
-          <tr>
-            <td className="icon-cell">
-              <img src={`${process.env.PUBLIC_URL}/images/soundcloudl.png`} alt="sound" />
-            </td>
-            <td>Listen to some of my mixes here ...</td>
-            <td><a href="https://soundcloud.com/zach-cohen-37098677" target="_blank" rel="noopener noreferrer">MY SOUNDCLOUD</a></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div className="soundcloud-tracks">
-        <iframe 
-          width="100%" 
-          height="166" 
-          scrolling="no" 
-          frameBorder="no" 
-          allow="autoplay" 
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1725885192&color=%23d300a9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-          title="Minimal Deep Mix"
-        />
-        <iframe 
-          width="100%" 
-          height="166" 
-          scrolling="no" 
-          frameBorder="no" 
-          allow="autoplay" 
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1718730633&color=%23d300a9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-          title="Organic House Mix"
-        />
-        <iframe 
-          width="100%" 
-          height="166" 
-          scrolling="no" 
-          frameBorder="no" 
-          allow="autoplay" 
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1789336879&color=%23d300a9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-          title="House Party Mix"
-        />
-      </div>
     </div>
   );
 };
