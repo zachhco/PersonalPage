@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { FaLinkedin, FaEnvelope, FaSoundcloud, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaEnvelope, FaSoundcloud, FaGithub, FaCar } from 'react-icons/fa';
 
 const FooterContainer = styled.footer`
   display: flex;
@@ -25,17 +25,20 @@ const IconLink = styled.a`
 const Footer = () => {
   return (
     <FooterContainer>
-      <IconLink href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+      <IconLink href="https://www.linkedin.com/in/zach-cohen-683a58191/" target="_blank" rel="noopener noreferrer">
         <FaLinkedin />
       </IconLink>
-      <IconLink href="mailto:example@example.com">
+      <IconLink href="mailto:zrocohen@gmail.com">
         <FaEnvelope />
       </IconLink>
-      <IconLink href="https://soundcloud.com" target="_blank" rel="noopener noreferrer">
+      <IconLink href="https://soundcloud.com/floatedzeus" target="_blank" rel="noopener noreferrer">
         <FaSoundcloud />
       </IconLink>
-      <IconLink href="https://github.com" target="_blank" rel="noopener noreferrer">
+      <IconLink href="https://github.com/zachhco" target="_blank" rel="noopener noreferrer">
         <FaGithub />
+      </IconLink>
+      <IconLink href="https://members.iracing.com/membersite/member/CareerStats.do" target="_blank" rel="noopener noreferrer">
+        <FaCar />
       </IconLink>
     </FooterContainer>
   );
