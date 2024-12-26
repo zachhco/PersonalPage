@@ -31,14 +31,11 @@ const Footer = () => {
       <IconLink href="mailto:zrocohen@gmail.com">
         <FaEnvelope />
       </IconLink>
-      <IconLink href="https://soundcloud.com/floatedzeus" target="_blank" rel="noopener noreferrer">
+      <IconLink href="https://soundcloud.com/zach-cohen-37098677" target="_blank" rel="noopener noreferrer">
         <FaSoundcloud />
       </IconLink>
       <IconLink href="https://github.com/zachhco" target="_blank" rel="noopener noreferrer">
         <FaGithub />
-      </IconLink>
-      <IconLink href="https://members.iracing.com/membersite/member/CareerStats.do" target="_blank" rel="noopener noreferrer">
-        <FaCar />
       </IconLink>
     </FooterContainer>
   );

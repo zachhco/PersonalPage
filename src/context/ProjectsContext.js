@@ -20,6 +20,15 @@ export const ProjectsProvider = ({ children }) => {
       details: `During my time doing research in South Africa, I was fortunate enough to develop relationships with several amazing NGOs. One of them was Siphekela Isizwe Empowerment and Feeding Scheme. Run by Lungi, they provide nutrition, empowerment, and relief to seniors and children in western Cape townships. To give Lungi and Siphekela Isizwe Empowerment and Feeding Scheme more visibility, I created a website that provides an overview of their work and a means by which people can assist. siphekelaisizwe.com`,
       technologies: ['Web Development', 'NGO', 'South Africa'],
       image: process.env.PUBLIC_URL + '/images/snap.png'
+    },
+    {
+      id: 3,
+      title: 'Car Safety Prediction Dashboard',
+      description: 'Interactive Death Prediction Application.',
+      details: 'This dashboard predicts the probability of death while driving given a set of user-selected inputs. Predictions are made via a pre-tuned random forest model.',
+      technologies: ['Machine Learning', 'Python', 'Data Visualization'],
+      image: process.env.PUBLIC_URL + '/images/green.png',
+      path: '/projects/car-safety-dash'
     }
   ]);
 

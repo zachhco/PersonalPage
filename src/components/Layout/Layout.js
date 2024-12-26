@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styled from '@emotion/styled';
 
-const Container = styled(motion.div)`
+const StyledContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -18,6 +18,8 @@ const Container = styled(motion.div)`
   position: relative;
   z-index: 1;
 `;
+
+const Container = motion(StyledContainer);
 
 const Layout = ({ children }) => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -42,7 +44,7 @@ const Layout = ({ children }) => {
 
   return (
     <Container
-      isDarkTheme={isDarkTheme}
+      $isDarkTheme={isDarkTheme}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}

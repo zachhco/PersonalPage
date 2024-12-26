@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 import { ProjectsProvider } from './context/ProjectsContext';
 import SeatbeltProject from './pages/ProjectPages/SeatbeltProject';
 import NGOProject from './pages/ProjectPages/NGOProject';
+import CarSafetyDashProject from './pages/ProjectPages/CarSafetyDashProject';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/projects/seatbelt" element={<SeatbeltProject />} />
             <Route path="/projects/ngo" element={<NGOProject />} />
             <Route path="/floatedzeus" element={<FloatedZeus />} />
+            <Route path="/projects/car-safety-dash" element={<CarSafetyDashProject />} />
           </Routes>
         </Layout>
         <Footer />

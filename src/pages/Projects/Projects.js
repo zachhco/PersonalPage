@@ -78,6 +78,8 @@ const Projects = () => {
         return '/projects/seatbelt';
       case 2:
         return '/projects/ngo';
+      case 3:
+        return '/projects/car-safety-dash';
       default:
         return '#';
     }
