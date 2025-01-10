@@ -115,10 +115,13 @@ const SeatbeltProject = () => {
       <Section>
         <SectionTitle>Project Overview</SectionTitle>
         <Text>
-          This research investigates the effectiveness of seatbelts as a safety mechanism and explores 
-          the influence of risky behaviors like alcohol and drug consumption on accident severity. 
-          Additionally, it compares the predictive performance of machine learning models against 
-          traditional econometric models in the context of vehicle-related fatalities.
+        My senior thesis investigates the effectiveness of seatbelts as an automotive safety mechanism and examines the influence of 
+        risky behaviors, such as alcohol and drug consumption, on accident severity. The research was inspired by Sam Peltzman’s paper 
+        “The Effects of Automobile Safety Regulation” (1975), which claims there is a risk compensation effect associated with the use of 
+        seatbelts. Risk compensation theory (RCT) posits that a safety device, in this case, the seatbelt, lowers the perceived cost of damages, 
+        thus incentivizing more risky behavior. Peltzman finds this effect to be present with seatbelts and thus argues that seatbelts are not 
+        beneficial as a road safety device. My research revisits Peltzman’s findings using updated data and more advanced modeling techniques 
+        to reassess the validity of his claims.
         </Text>
       </Section>
 
@@ -126,6 +129,7 @@ const SeatbeltProject = () => {
         <SectionTitle>Key Findings</SectionTitle>
         <List>
           <li>Strong evidence supporting the life-saving potential of seatbelts</li>
+          <li>No evidence of Risk Compensation Theory pertaining to seatbelts</li>
           <li>Significant associations between substance use and increased probability of death in severe accidents</li>
           <li>Superior predictive performance of ensemble-based machine learning models, particularly random forest approach</li>
           <li>Trade-off between model accuracy and interpretability when comparing ML and econometric approaches</li>
@@ -135,9 +139,9 @@ const SeatbeltProject = () => {
       <Section>
         <SectionTitle>Methodology</SectionTitle>
         <Text>
-          The study employs a comprehensive approach combining econometric analysis with machine learning techniques. 
-          We utilize data from the FARS (Fatality Analysis Reporting System) database and implement various modeling 
-          strategies including probit, logit, and random forest models.
+        The study employs a comprehensive approach combining econometric analysis with machine learning techniques. 
+        I utilize data from the FARS (Fatality Analysis Reporting System) database and implement 
+        various modeling strategies including probit, logit, and random forest models.
         </Text>
         <Image 
           src={process.env.PUBLIC_URL + '/images/Belting3.png'} 
@@ -156,6 +160,18 @@ const SeatbeltProject = () => {
           rel="noopener noreferrer"
         >
           Download Paper (PDF)
+        </DownloadButton>
+      </Section>
+
+      <Section>
+        <SectionTitle>Interactive Adaptation</SectionTitle>
+        <Text>
+          To explore an interactive adaptation of my research click the link below:
+        </Text>
+        <DownloadButton 
+          href="/projects/car-safety-dash"
+        >
+          Car Safety Prediction Dashboard
         </DownloadButton>
       </Section>
     </PageContainer>

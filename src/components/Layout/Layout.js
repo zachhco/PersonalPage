@@ -7,8 +7,8 @@ const StyledContainer = styled.div`
   margin: 0 auto;
   padding: 20px;
   min-height: 100vh;
-  background: ${props => props.$isDarkTheme ? '#000000' : 'white'};
-  box-shadow: ${props => props.$isDarkTheme ? `
+  background: ${props => props.isDarkTheme ? '#000000' : 'white'};
+  box-shadow: ${props => props.isDarkTheme ? `
     0 0 20px #00ff00,
     0 0 30px #00ff00,
     0 0 40px #00ff00,
@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
 
   return (
     <Container
-      $isDarkTheme={isDarkTheme}
+      isDarkTheme={isDarkTheme}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
