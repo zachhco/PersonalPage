@@ -169,7 +169,7 @@ const SeatbeltProject = () => {
           To explore an interactive adaptation of my research click the link below:
         </Text>
         <DownloadButton 
-          href="/projects/car-safety-dash"
+          href="https://cohenzach.com/projects/car-safety-dash"
         >
           Car Safety Prediction Dashboard
         </DownloadButton>
